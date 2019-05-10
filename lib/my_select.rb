@@ -1,8 +1,8 @@
 def my_select(collection)
-  i = 0
- name_collection = []
-  while i < collection.length
-    if yield(collection[i])
+  i = 0 #set counter
+ name_collection = [] #set an empty array that everything will be collected in.
+  while i < collection.length #same process
+    if yield(collection[i]) #this is basically set to true #point isn't to specify even or odd, but anything to pass through.
   name_collection.push(collection[i])
 end
       i += 1
@@ -10,4 +10,4 @@ end
     name_collection
 end
 
-#if yield is t, add to array
+#new collection should be {2,4}
